@@ -1,9 +1,6 @@
 /.idea/
-/maven_test/.idea/
-/maven_test/logs/
-/maven_test/target/
-/servletjee/target/
-/servletjee/.idea/
-/tomcat_test/target/
-/tomcat_test/.idea/
 /tomcat_test/tomcat_test.iml
+unnamed.patch
+*/.idea
+*/target
+maven_test/logs
