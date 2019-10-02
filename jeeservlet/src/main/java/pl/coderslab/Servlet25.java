@@ -14,20 +14,13 @@ import java.util.Random;
 @WebServlet(name = "Servlet25", urlPatterns = {"/servlet25"})
 public class Servlet25 extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html;charset=utf-8");
+        response.setCharacterEncoding("UTF-8");
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        Random random = new Random();
-        Integer[] numbers = new Integer[10];
-
-        for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(100) + 1;
-        }
-
-        printArray(numbers, response);
-        Arrays.sort(numbers);
-        printArray(numbers, response);
+        request.getRequestDispatcher("/ser").forward(request, response);
     }
 
     private static void printArray(Integer[] numbers, HttpServletResponse response) throws IOException {

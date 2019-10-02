@@ -50,7 +50,6 @@ public class Form4 extends HttpServlet {
         }
     }
 
-
     private static double countDelta(int a, int b, int c) {
         return (b * b) - (4 * a * c);
     }
