@@ -22,12 +22,12 @@ public class Session3All extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         HttpSession session = request.getSession();
-        Enumeration<String> sesionObject = session.getAttributeNames();
         //Set<String> keysSet = new HashSet<String>();
 
+        Enumeration<String> sessionKeys = session.getAttributeNames();
         response.getWriter().append("<table>");
-        while (sesionObject.hasMoreElements()) {
-            String key = sesionObject.nextElement();
+        while (sessionKeys.hasMoreElements()) {
+            String key = sessionKeys.nextElement();
             response.getWriter()
                     .append("<tr><td>")
                     .append(key)
