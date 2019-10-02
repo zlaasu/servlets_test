@@ -22,7 +22,7 @@ public class Form5 extends HttpServlet {
         double degree;
 
         if (degreesStr == null || convertionType == null || degreesStr.isEmpty() || convertionType.isEmpty()) {
-            request.getRequestDispatcher("/form4.html").forward(request, response);
+            request.getRequestDispatcher("/form5.html").forward(request, response);
         } else {
             try {
                 degree = Double.valueOf(degreesStr);
