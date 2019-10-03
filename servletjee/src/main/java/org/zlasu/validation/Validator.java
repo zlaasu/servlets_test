@@ -9,10 +9,19 @@ public class Validator {
         return false;
     }
 
-    public static boolean isNumber(String string) {
-        if (string.matches("^[0-9]+\\.?[0-9]*$")) {
+    public static boolean isPositiveNumber(String string) {
+        if (isEmpty(string)) {
             return false;
         }
-        return true;
+
+        if (string.matches("^[0-9]+\\.?[0-9]*$")) {
+            try {
+                double d = Double.parseDouble(string);
+            } catch (NumberFormatException | NullPointerException nfe) {
+                return false;
+            }
+            return true;
+        }
+        return false;
     }
 }

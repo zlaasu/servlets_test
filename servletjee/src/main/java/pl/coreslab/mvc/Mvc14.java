@@ -1,5 +1,7 @@
 package pl.coreslab.mvc;
 
+import org.zlasu.validation.Validator;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
