@@ -5,3 +5,4 @@ unnamed.patch
 */target
 maven_test/logs
 jeeservlet/jeeservlet.iml
+*/*.iml
