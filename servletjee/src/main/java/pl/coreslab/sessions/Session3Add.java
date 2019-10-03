@@ -17,6 +17,8 @@ public class Session3Add extends HttpServlet {
         String value = request.getParameter("value");
 
         session.setAttribute(key, value);
+
+        response.sendRedirect("/addToSession");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
