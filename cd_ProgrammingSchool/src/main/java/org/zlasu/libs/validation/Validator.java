@@ -1,4 +1,4 @@
-package org.zlasu.validation;
+package org.zlasu.libs.validation;
 
 public class Validator {
 

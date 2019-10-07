@@ -1,5 +1,4 @@
-package org.zlasu.validation;
-
+package org.zlasu.libs.validation;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
