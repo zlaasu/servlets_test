@@ -10,6 +10,7 @@ public class DbService {
     private static DbService INSTANCE = null;
 
     private DbService(){}
+
     public static DbService getInstance(){
         if(INSTANCE==null){
             INSTANCE = new DbService();

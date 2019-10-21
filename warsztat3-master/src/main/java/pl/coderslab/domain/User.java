@@ -12,6 +12,7 @@ public class User extends ResultObject<User>{
 
     public User() {
     }
+
     @Override
     public User setValues(String[] row){
         this.setId(Long.parseLong(row[0]));
@@ -23,6 +24,7 @@ public class User extends ResultObject<User>{
         }
         return this;
     }
+
     public Long getId() {
         return id;
     }

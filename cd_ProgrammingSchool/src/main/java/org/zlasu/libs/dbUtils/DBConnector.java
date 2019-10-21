@@ -14,9 +14,4 @@ public class DBConnector {
         return DbUtil.getConnection();
         //return DriverManager.getConnection(DB_URL, DB_USER, DB_PASS);
     }
-
-
-
-
-
 }
